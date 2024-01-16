@@ -1,0 +1,18 @@
+CLI availables on Windows:
+  - Command Prompt: cmd.exe
+    - Command Prompt, known as cmd.exe, has been part of Windows operating systems for a long time, carrying over many functionalities 
+      from the older MS-DOS system.
+  - Powershell: powershell.exe
+    - PowerShell is a more powerful and modern command line interface compared to Command Prompt. It was introduced to extend the 
+      capabilities of the traditional Command Prompt.
+
+Windows Search Service: 
+  - This is a feature in Windows that indexes files on your computer. It scans through the files at scheduled times and compiles a list of 
+    names, properties, and other details into a database. This process can be resource-intensive, so on many Windows servers, it's either 
+    not installed or disabled. However, it's often enabled for files in the home directory on Windows 8 and Windows 10 desktop computers. 
+    By default, it allows you to find files based on their name, path, last modified time, size, and other details. You can configure it to 
+    search within file contents, but this makes indexing slower.
+  - Configuring Windows Search Service: 
+    - To enable searching within file contents, you need to adjust the settings. This is done through the Control Panel, specifically under 
+      'Indexing Options'. Here, you can modify settings for various folders (like the Users folder), and choose to index properties and file 
+      contents. This re-indexing can take time, depending on the number of files and their size.

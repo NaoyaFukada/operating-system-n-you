@@ -1,0 +1,5 @@
+Linux:
+  - Command Line:
+    - Shell: The command line interpreter
+      - Interpreter: a computer program that changes the instructions of another program into a form that the computer can understand and use
+    - Bash: The language that we use to interact with Shell

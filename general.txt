@@ -1,0 +1,9 @@
+Difference between folder size and size on disk:
+  - Folder Size: The actual size of the data contained in a folder
+  - Size on disk: 
+    - This represents how much space the folder actually takes up on your storage device (like a hard drive or SSD). It can be different 
+      from the folder size due to how data is stored on the disk. Storage devices are divided into sectors and clusters; a cluster is the 
+      smallest unit of space that can be allocated to a file. If a file is smaller than a cluster, it still occupies the whole cluster. 
+      For example, if your storage device uses 4 KB clusters and you have a file that's only 1 KB, it will still occupy a 4 KB cluster on 
+      the disk, making its 'size on disk' 4 KB even though its actual size is only 1 KB. Additionally, file system overhead, metadata, and 
+      other factors can also contribute to the 'size on disk' being different from the actual data size.
