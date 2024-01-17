@@ -39,7 +39,7 @@
     rm secure_file 2> /dev/null # This would output the result to null, which means it's gone foreve
 
 
-this is the changes that i wanna make. Nani
+this is the changes that i wanna make.
 
 
   
