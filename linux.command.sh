@@ -32,14 +32,21 @@
     tail file_name
   # To search within files for lines that match a specified pattern, useful for locating specific text in single or multiple files:
     grep cow farm_animals.txt
- # Input, Output, and Pipeline:
+# Input, Output, and Pipeline:
   # To use standard input, instead of ">", which is for the standard output, they use "<":
     cat < file_input.txt # They are assigning an input not from an keyboard but from the file
   # TO not to see the error message and dont want to save it to somewhere else as well
-    rm secure_file 2> /dev/null # This would output the result to null, which means it's gone foreve
+    rm secure_file 2> /dev/null # This would output the result to null, which means it's gone forever
 
-
-this is the changes that i wanna make.
+# User Management:
+  # To allow a user to switch to the root user:
+    sudo su -
+  # To display the contents of the /etc/group file, which contains information about all the user groups on the Linux system. 
+    # Each line in this file represents a different group and includes information like the group name, group password (usually an 'x' denoting it's stored elsewhere), group ID, and the list of users belonging to that group. 
+    cat /etc/group
+  # To list all user accounts on the system
+    cat /etc/passwd
+  
 
 
   

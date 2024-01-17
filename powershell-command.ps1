@@ -61,3 +61,12 @@
     rm secure_file 2> errors.txt # This would cause an error cause user dooesn't have an access right for "secure_file"
   # TO not to see the error message and dont want to save it to somewhere else as well
     rm secure_file 2> $null # This would output the result to null, which means it's gone foreve
+
+# User Management:
+  <# To retrieve a list of all the local user accounts on a Windows machine. You can check, including their status 
+    (like whether the local administrator account is enabled or not), without navigating through the system's GUI. #>
+    Get-LocalUser
+  # To list all the local groups on a Windows computer:
+    Get-LocalGroup
+  # To show all the members of a specified local group:
+    Get-LocalGroupMember GroupName
