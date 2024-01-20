@@ -1,10 +1,3 @@
-# Help:
-  # To know how to use 'ls':
-    Get-Help ls
-  # More detailed descriptive output:
-    Get-Help ls -Full
-  # To display aliases for PowerShell cmdlets (commands):
-    
 # General:
   # To see all the hidden files as well (In this case, under root C directory):
     ls -Force C:\
@@ -20,31 +13,6 @@
     start notepad++ file_name
   # Used to search for text patterns in files:
     Select-String cow farm-animal.txt
-
-# Parameters:
-  # To allow you to specify a pattern that the command uses to filter results:
-    -Filter
-  # This is used to extend the scope of a command to include all subdirectories of the specified path:
-    -Recurse
-  <# This is used to display additional detailed information about the operation performed by the command, typically for debugging or 
-    understanding the command's execution process: #>
-    -Verbose
-
-# To display contents of a file:
-  # To display the contents of a file directly in the console. It reads the file and outputs its contents to the screen:
-    cat file_name
-  # To view the contents of a file one page at a time:
-    more file_name
-    # This will advance the output by one line. This allow it possible to move through the file slowly and read each line:
-      Press Enter Key
-    # To advance the output by one page
-      Press Space Key
-    # To exit the more interface and return you to the regular command prompt:
-      Press q
-    # To display the first 10 lines of the specified file:
-      cat file_name -Head 10
-    # To display the last 10 lines of the file:
-      cat file_name -Tail 10
 
 # Input, Output, and the Pipeline
   # To output "woof" in a "dog.txt" file:

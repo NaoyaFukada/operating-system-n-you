@@ -1,9 +1,3 @@
-# Help:
-  # To know how to use 'ls':
-    ls --help
-  # Get a little more detailed info:
-    man ls
-
 # General:
   # To receive a long detailed output (This example is getting the detailed listing under root directory)
     ls -l /
