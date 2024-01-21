@@ -1,0 +1,26 @@
+Pipeline: 
+  - Pipeline is a powerful feature that allows you to pass the output of one command (cmdlet, function, script, or even a variable) 
+    as the input to another command.
+
+Input and Output:
+  - I/O Streams (Input/Output Streams): 
+    - These are the channels through which a process communicates with its environment. Every process in Windows, including PowerShell 
+      commands, has access to these streams to take input and produce output. They facilitate the flow of data into and out of a process, 
+      much like water flows in a river.
+    - Stdin (Standard Input): 
+      - This is the input stream through which a process receives data. In a command-line interface (CLI), the standard input typically comes 
+        from the keyboard or from another process's output. For example, when you type a command in PowerShell, you are providing input 
+        through Stdin.
+    - Stdout (Standard Output): 
+      - Stdout is the primary output stream where a process sends its output data. By default, the output is displayed on the screen in the 
+        CLI. However, you can redirect this output to other destinations, like a file or another process.
+    - Stderr (Standard Error): 
+      - This is the output stream specifically used for error messages. If a process encounters an error, the details of that error are sent 
+        to Stderr. Like Stdout, Stderr can also be redirected to different destinations, such as a file or to be ignored altogether.
+  - 1 (Stdout): 
+    - The number 1 is often used to explicitly refer to the Stdout stream. In redirection commands, specifying 1> means redirecting the 
+      standard output. However, this is usually optional as Stdout is the default output stream.
+  - 2 (Stderr): 
+    - The number 2 is used to represent the Stderr stream. In redirection commands, using 2> allows you to redirect the error messages to a 
+      different destination. This is useful for handling errors separately from the regular output.
+

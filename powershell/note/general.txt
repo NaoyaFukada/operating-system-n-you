@@ -1,0 +1,25 @@
+Tilde (~) symbol: 
+  - the tilde (~) symbol represents the home directory, which is typically something like C:\Users\[YourUsername]. 
+    So when you type cd ~, no matter where you are in the file system, this command will take you directly back to your home directory.
+
+Tab completion:
+  - Tab completion is a feature in PowerShell that helps to autocomplete file names and directories. When you start typing a path or 
+    filename, pressing the Tab key will automatically complete the name based on what's available in the current directory. 
+    If there are multiple files or folders that start with the same letters you've typed, continuing to press Tab will cycle through 
+    all the available options. This feature saves time and reduces errors in typing long file paths or names.
+
+Ctrl-R:
+  - This is a keyboard shortcut used for searching through your command history. When you press Ctrl-R, it activates a reverse search mode 
+    where you can type a part of a command, and PowerShell will display matching commands from your history. This feature allows you to 
+    quickly find and reuse previously executed commands without having to retype them, making it a convenient tool for recalling complex 
+    commands or sequences you've used before.
+
+cp *.jpg {path}: 
+  - The command cp *.jpg {path} in PowerShell is used to copy all JPEG files from the current directory to a specified path. 
+    The *.jpg part uses a wildcard pattern (*) that matches any file name ending with .jpg, allowing you to copy all JPEG files 
+    in one command. The {path} should be replaced with the destination where you want these files to be copied.
+
+Wildcard: 
+  - This is a character used to replace or represent one or more characters in a string. The most common wildcards are the asterisk (*) 
+    and the question mark (?). The asterisk matches any number of characters (including zero), while the question mark matches exactly one 
+    character. Wildcards are extremely useful in file manipulation commands for matching groups of files.

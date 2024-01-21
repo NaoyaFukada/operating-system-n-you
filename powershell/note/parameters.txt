@@ -1,0 +1,12 @@
+Recurse: 
+  - The "-Recurse" parameter in PowerShell commands with cp (Copy-Item) instructs the command to operate not only on the specified items 
+    but also on all items in its subdirectories. This is particularly useful when dealing with folders, as it ensures that all nested files 
+    and subfolders are included in the operation. Without -Recurse, a command that involves a directory will only act on the directory itself 
+    and not its contents.
+
+Verbose: 
+  - The "-Verbose" parameter in PowerShell provides detailed information about the operation being performed. When used with a command, 
+    it causes the command to give more detailed output, such as indicating each action it performs or each file it processes. 
+    This is especially useful for tracking what a script or command is doing, particularly for troubleshooting or for understanding 
+    the behavior of a script.
+    

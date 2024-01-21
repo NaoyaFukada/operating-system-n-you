@@ -1,0 +1,8 @@
+Get-Alias:
+  - This is used to display the actual cmdlet (command) that an alias represents. PowerShell aliases are essentially shorthand or nicknames 
+    for the longer cmdlet names. When you use an alias in PowerShell, it's a convenient way to call a more complex or verbose cmdlet without 
+    having to type out the full name.
+  - For example, if you use the alias ls in PowerShell, it's actually an alias for the Get-ChildItem cmdlet. Using "Get-Alias ls" will reveal 
+    this association. This command helps you understand what's happening behind the scenes when you use these shorter aliases, and it's 
+    particularly useful for learning the actual PowerShell cmdlets associated with the more familiar, often Unix-like, command names.
+

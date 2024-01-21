@@ -1,0 +1,16 @@
+Select-String (sls) in PowerShell: 
+  - This is a PowerShell command used to search for text patterns in files. It's a versatile tool that can find words, phrases, or more 
+    complex patterns defined by regular expressions. For instance, if you run "Select-String cow farm-animal.txt", it will search for the 
+    word "cow" in the file farm-animal.txt.
+
+Pattern Matching with Select-String: 
+  - When you want to search through multiple files, you can use pattern matching. For example, Select-String cow *.txt searches for the 
+    word "cow" in all .txt files in the current directory. The asterisk (*) is a wildcard character that represents any number of 
+    characters, allowing you to search across multiple files.
+    
+Search Filter:
+  - The "-Filter" parameter is used to specify a search pattern for file names. When you use this parameter, PowerShell filters the results 
+    to include only those files that match the pattern you've provided. For example, if you use -Filter *.exe, PowerShell will return only 
+    the files with an .exe extension. The asterisk (*) in *.exe acts as a wildcard, meaning it will match any characters preceding 
+    the .exe extension. This parameter is efficient because it applies the filter at the source, reducing the amount of data that PowerShell 
+    needs to process further.
