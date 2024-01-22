@@ -6,3 +6,13 @@ Get-LocalGroup
 
 # To show all the members of a specified local group:
 Get-LocalGroupMember GroupName
+
+# Change the user password
+net user userName "Type_Password_here"
+
+# Change the user password in a secured way (Typing directly is unsecure as it would be stored in log file and also people who accidentally walked behind you can see that)
+net user userName * # This would ask you to type password but nothing will output, which is more secure
+
+# Ask user to change their password next time when they login
+net user userName /logonpasswordchg:yes
+

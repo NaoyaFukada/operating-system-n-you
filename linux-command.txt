@@ -1,2 +1,0 @@
-Tilde (~) symbol: 
-  - In Linux, "~" translates to "/home/username". So not directly under the home directly
