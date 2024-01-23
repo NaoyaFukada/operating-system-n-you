@@ -1,0 +1,35 @@
+Access Control Lists (ACLs):
+  - ACLs are used in Windows to define security and access permissions for files and directories.
+  - An ACL is a collection of Access Control Entries (ACEs), each specifying access rights for a user or a group of users.
+  - ACLs help determine who can access a particular resource and what actions they can perform (like read, write, execute).
+
+Discretionary Access Control Lists (DACLs):
+  - This is a note about who can use a file and what they are allowed to do with it.
+  - DACLs are a type of ACL that owners of a file or resource use to specify who can access that resource and in what manner.
+  - They contain ACEs that grant or deny permissions to users or groups.
+  - The "discretionary" part means that the resource owner or someone with permission to set security can change the DACL.
+
+System Access Control Lists (SACLs):
+  - This is used to tell Windows that it should use an event log to make a note of every time someone access a file or a folder
+  - SACLs are used to specify audit settings for a file or directory.
+  - They are not about granting access but about logging attempts to access a resource.
+  - SACLs determine which attempts to access a resource should be logged in the security log, such as successful or failed read, write, or execute attempts.
+
+Permissions in Windows ACLs:
+  - Read: 
+    - This permission allows a user to view and read the contents of a file or to list the files and subdirectories within a directory.
+  - Read & Execute: 
+    - In addition to the permissions granted by "Read", this allows the execution of files; primarily important for files that are executable (like .exe or script files). 
+      For directories, it includes the ability to traverse the directory.
+  - List Folder Contents: 
+    - This is an alias for "Read & Execute" but is applied specifically to directories, allowing a user to list the files and subdirectories 
+      within them and to execute files within the directory.
+  - Write: 
+    - Grants the capability to modify the contents of a file or to add new files or subdirectories within a directory. It's important to 
+      note that "Write" does not inherently include the ability to read the file.
+  - Modify: 
+    - This is a more comprehensive permission that includes "Read", "Write", and "Execute". It allows for reading, writing, modifying, 
+      and executing files in a directory or the directory itself.
+  - Full Control: 
+    - The most extensive permission, granting a user all the capabilities of "Modify" along with additional administrative powers like 
+      changing permissions (modifying the ACL) and taking ownership of the file or directory.

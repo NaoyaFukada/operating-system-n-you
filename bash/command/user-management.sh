@@ -7,3 +7,15 @@ cat /etc/group
   
 # To list all user accounts on the system
 cat /etc/passwd
+
+# Set Password: When you set a password it's securely scrambled, then stored in a special priviledged file called "/etc/shadow"
+passwd username
+
+# Force other user to change their password by themselves
+sudo passwd -e username
+
+# Add new user
+sudo useradd userName
+
+# Delete user account
+sudo userdel userName

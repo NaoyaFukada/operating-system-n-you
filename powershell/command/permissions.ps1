@@ -1,0 +1,2 @@
+# To display or modify the Access Control Lists (ACLs) for the Desktop folder of the specified user, providing detailed information about the permissions and access rights for that directory.
+icacls C:\Users\username\Desktop\
