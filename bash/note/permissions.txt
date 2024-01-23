@@ -1,0 +1,8 @@
+Permission Options:
+  Read:
+    - Allows someone to read the contents of a file or folder
+  Write: 
+    - Allows someone to write informatrion to a file or folder
+  Execute:
+    - Allows someone to execute a program
+    
