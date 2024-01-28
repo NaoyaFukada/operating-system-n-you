@@ -6,3 +6,16 @@ Permission Options:
   Execute:
     - Allows someone to execute a program
     
+To change permissions:
+  - chmod
+  - Permission set:
+    - u: owner
+    - g: Group
+    - o: Other users
+  - To add or remove permissions, just use a plus or minus symbol that indicates who the permission effects.
+
+To change permissions numerically:
+  - The numerical equivalent of rws is:
+    - 4 for read or r
+    - 2 for write or w
+    - 1 for execute or x
