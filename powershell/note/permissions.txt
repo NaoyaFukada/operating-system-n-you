@@ -33,3 +33,17 @@ Permissions in Windows ACLs:
   - Full Control: 
     - The most extensive permission, granting a user all the capabilities of "Modify" along with additional administrative powers like 
       changing permissions (modifying the ACL) and taking ownership of the file or directory.
+
+Certain permissions and inheritance flags:
+  - OI (Object Inherit): 
+    - This flag indicates that the permissions applied will also be inherited by files within the folder. It means that any new file created 
+      in or moved to the "C:\Vacation Pictures" directory will inherit the permissions specified by this command.
+    - Any file directly within the folder will inherit the specified permissions.
+  - CI (Container Inherit): 
+    - Similar to OI, but this flag specifies that the permissions will be inherited by subdirectories within the folder. Any new 
+      subdirectory created in or moved to the "C:\Vacation Pictures" directory will inherit these permissions.
+    - The permissions set on the parent folder are inherited by subfolders (the "containers"), so the files inside the 
+      subfolders can also inherit permissions.
+  - R (Read):
+    - This is the actual permission being granted and stands for "Read" permission. It allows viewing the folder's contents and opening its 
+      files but not modifying, deleting, or creating new files within it.
