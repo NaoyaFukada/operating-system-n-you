@@ -47,3 +47,27 @@ Certain permissions and inheritance flags:
   - R (Read):
     - This is the actual permission being granted and stands for "Read" permission. It allows viewing the folder's contents and opening its 
       files but not modifying, deleting, or creating new files within it.
+
+Simple Permissions:
+  - Overview: 
+    - Simple permissions are user-friendly, predefined sets of permissions that cover common use cases for managing file and folder access. They are designed to 
+      be easily applied without needing to understand the underlying complexities.
+  - Example: 
+    - When you assign the "Read" permission to a file or folder, you're actually enabling a combination of several special permissions like listing folder contents 
+      and reading file data.
+
+Special Permissions:
+  - Overview: 
+    - Special permissions are more granular and specific than simple permissions, allowing for detailed control over how users and groups interact with files and folders.
+  - Example: 
+    - Special permissions include actions like "List folder / read data," "Read attributes," "Read extended attributes," and "Read permissions." 
+      These can be individually assigned to create custom access rules beyond what is offered by simple permissions.
+
+icacls C:\Windows\Temp:
+  - Command Use: 
+    - The icacls command is used to view and modify the access control lists (ACLs) of files and directories. For example, icacls C:\Windows\Temp displays or modifies 
+      permissions for the C:\Windows\Temp directory, which is used by the system and applications to store temporary files.
+  - Special Context: 
+    - The command can be used to ensure that all users can create files and folders in C:\Windows\Temp but cannot delete files created by others.
+
+
