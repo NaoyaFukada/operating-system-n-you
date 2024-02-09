@@ -44,6 +44,10 @@ Certain permissions and inheritance flags:
       subdirectory created in or moved to the "C:\Vacation Pictures" directory will inherit these permissions.
     - The permissions set on the parent folder are inherited by subfolders (the "containers"), so the files inside the 
       subfolders can also inherit permissions.
+  - IO (Inheritance Only):
+    - The "Inheritance Only" flag indicates that the permission is applied to items created within the container (like files within a folder) 
+      but not to the container itself.
+    - This setting helps in applying permissions to new files and folders within a directory without affecting the directory's own permissions.
   - R (Read):
     - This is the actual permission being granted and stands for "Read" permission. It allows viewing the folder's contents and opening its 
       files but not modifying, deleting, or creating new files within it.
@@ -62,6 +66,12 @@ Special Permissions:
   - Example: 
     - Special permissions include actions like "List folder / read data," "Read attributes," "Read extended attributes," and "Read permissions." 
       These can be individually assigned to create custom access rules beyond what is offered by simple permissions.
+  - WD (Write Data/Create Files):
+    - Allows or denies writing data to a file or creating files within a folder.
+  - AD (Append Data/Create Folders):
+    - Allows or denies appending data to the end of a file or creating subfolders within a folder.
+  - S (Synchronize):
+    - Enables or disables the ability to synchronize access to the file or folder, ensuring that multiple processes can access the resource with a consistent view.
 
 icacls C:\Windows\Temp:
   - Command Use: 
@@ -69,5 +79,7 @@ icacls C:\Windows\Temp:
       permissions for the C:\Windows\Temp directory, which is used by the system and applications to store temporary files.
   - Special Context: 
     - The command can be used to ensure that all users can create files and folders in C:\Windows\Temp but cannot delete files created by others.
-
+  - Temp Folder:
+    - The C:\Windows\Temp folder is a system directory intended for storing temporary files used by Windows and installed applications. Permissions in this folder 
+      are crucial for allowing applications to function correctly without inadvertently giving users the ability to affect each other's temporary data.
 
