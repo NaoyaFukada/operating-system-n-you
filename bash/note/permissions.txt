@@ -25,12 +25,18 @@ Meaning of 'rwsr-xr-x':
   - w: Write permission. The file can be modified.
   - s: Setuid bit. When applied to an executable file, it allows the file to be executed with the permissions of the file owner.
   - x: Execute permission. The file can be executed as a program.
-  - Also, this order separated by '-' is the user group. From the left, owner permission, group permission, and other user permission.
+  - Also, from the left, owner permission, group permission, and other user permission.
+    - rws: Owner Permission
+    - r-x: Group Permission
+    - r-x: Group Permission
   
-
-
 Setuid (Set User ID): 
   - This is a special permission in Linux that allows users to run an executable file with the file owner's permissions, not just their own. For example, when you change your 
     password, the command needs to access and modify files that are usually only accessible by the root user, like the /etc/shadow file. With setuid permission set on the 
     command's executable file, when you run the command, it temporarily gains root permissions to modify these protected files, even though you're not logged in as root. 
     This way, setuid enables specific tasks that require elevated privileges without giving users full root access, enhancing both functionality and security.
+  - setuid is assigned to the owner section of permissions. By doing this, when users in the 'group' or 'other' sections execute the file, 
+    they do so with the permissions of the file's owner. (This is talking about higher privileges)
+  - In addition to the normal executable permission, owner owns the higher privileged permission like modifying important system files. 
+    By assiging setUID, other user can execute those file as well. However, if other user don't even have the normal executable permission,
+    although setuid is assigned, they cannot execute anything. 

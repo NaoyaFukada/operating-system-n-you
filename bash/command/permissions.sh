@@ -21,3 +21,9 @@ sudo chown userName fileName
 
 # Change group of the file
 sudo chgrp groupName fileName
+
+# To set the setuid bit to the owner
+sudo chmod u+s File_name
+
+# Assign setuid (4) to the 755 permission. (Full control for owner and read and execute permission for group and other users)
+sudo chmod 4755 File_name
