@@ -27,3 +27,15 @@ sudo chmod u+s File_name
 
 # Assign setuid (4) to the 755 permission. (Full control for owner and read and execute permission for group and other users)
 sudo chmod 4755 File_name
+
+# To set the setgid to the folder
+sudo chmod g+s File_name
+
+# To set the setgid to the folder by numerical order
+sudo chmod 2755 File_name
+
+# To set sticky bit
+sudo chmod +t File_name
+
+# To set sticky bit by numerical order
+sudo chmod 1755 File_name
