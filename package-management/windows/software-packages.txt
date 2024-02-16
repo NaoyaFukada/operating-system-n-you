@@ -1,0 +1,6 @@
+Executable file (.exe):
+  - Contain instructions for a computer to execute when they run
+
+Microsoft Install Package (.msi):
+  - Used to guide a program called the Windows Installer in the installation, maintenance, and removel of programs on the Windows operating system.
+
